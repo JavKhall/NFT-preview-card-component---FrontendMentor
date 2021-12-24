@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	margin: 0px auto;
+	font-family: 'Outfit', sans-serif;
+	font-size: 18px;
+	background-color: hsl(217, 54%, 11%);
+	justify-content: center;
+	align-content: center;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Configuracion del la tarjeta*/
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	width: 350px;
+	align-items: center;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.671);
+}
+
+/*Configuracion del la imagen de la tarjeta*/
+.card-imagen {
+	display: flex;
+	height: 300px;
+	width: 300px;
+	margin: 25px;
+	position: relative;
+	border-radius: 10px;
+	background: url(images/icon-view.svg) center no-repeat hsla(178, 100%, 50%, 0.5);
+	cursor: pointer;
+	transition: 0.3s ease-in-out
+}
+
+.card-imagen img {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	opacity: 1;
+	transition: 0.4s ease-in-out;
+}
+
+.card-imagen img:hover {
+	opacity: .5;
+}
+
+/*Configuracion del texto*/
+.card-articulo h3 {
+	color: white;
+	margin: 5px 25px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.card-articulo h3:hover {
+	color: hsl(178, 100%, 50%);
+}
+
+.card-articulo p {
+	color: hsl(215, 51%, 70%);
+	margin: 15px 25px;
+}
+
+/*Configuracion del precion y el tiempo*/
+.card-valoracion {
+	display: flex;
+	width: 300px;
+	margin: 25px 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-valoracion img {
+	size: 15px;
+}
+
+.valoracion-precio, .valoracion-tiempo {
+	display: flex;
+	align-items: center;
+}
+
+.valoracion-precio p {
+	color: hsl(178, 100%, 50%);
+}
+
+.valoracion-tiempo p {
+	color: hsl(215, 51%, 70%);
+}
+
+.valoracion-precio  img, p, .valoracion-tiempo  img, p {
+	margin: 2px; 
+}
+
+/*Configuracion del separador*/
+.separador {
+	border: 0.5px solid hsl(215, 32%, 27%);
+	width: 300px;
+}
+
+/*Configuracion del Creador*/
+.card-creador {
+	display: flex;
+	align-items: center;
+	width: 300px;
+	margin-top: 15px; 
+}	
+
+.card-creador img {
+	display: flex;
+	height: 32px;
+	border: 1px solid hsl(0, 0%, 100%);
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.card-creador p {
+	color: hsl(215, 51%, 70%); 
+}
+
+.card-creador span {
+	color: hsl(0, 0%, 100%);
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.card-creador span:hover {
+	color:hsl(178, 100%, 50%)
+}
+/* CONFIGURACION DEL FOOTER
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+} */
